@@ -31,6 +31,16 @@
     <%= form.datetime_select :registered_at, id: :userd_registered_at %>
   </div>
 
+  <div class="field">
+    <%= form.label :updated_at %>
+    <%= form.datetime_select :updated_at, id: :userd_updated_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deleted_at %>
+    <%= form.datetime_select :deleted_at, id: :userd_deleted_at %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

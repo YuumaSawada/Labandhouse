@@ -4,12 +4,16 @@ class UserdsController < ApplicationController
   # GET /userds
   # GET /userds.json
   def index
-    @userds = Userd.all
+    @userds = Userd.all.without_deleted
   end
 
   # GET /userds/1
   # GET /userds/1.json
   def show
+  end
+
+  def restore1
+    Userd.with_deleted.find_by(id:@userd.id).restore
   end
 
   # GET /userds/new
@@ -19,6 +23,9 @@ class UserdsController < ApplicationController
 
   # GET /userds/1/edit
   def edit
+  end
+  def create1
+    Userd.with_deleted.find_by(id:@userd.id).restore
   end
 
   # POST /userds
@@ -59,6 +66,12 @@ class UserdsController < ApplicationController
       # format.html { redirect_to userds_url, notice: 'Userd was successfully destroyed.' }
       # format.json { head :no_content }
     # end
+    Userd.destroy(@userd.id)
+    @users = Userd.only_deleted
+  end
+
+  def restore
+    @users = Userd.only_deleted
   end
 
   private

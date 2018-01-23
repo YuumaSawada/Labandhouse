@@ -1,11 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Id:</strong>
-  <%= @userd.id %>
-</p>
-
-<p>
   <strong>Name:</strong>
   <%= @userd.name %>
 </p>

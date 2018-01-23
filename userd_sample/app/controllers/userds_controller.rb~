@@ -54,11 +54,11 @@ class UserdsController < ApplicationController
   # DELETE /userds/1
   # DELETE /userds/1.json
   def destroy
-    @userd.destroy
-    respond_to do |format|
-      format.html { redirect_to userds_url, notice: 'Userd was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+    # @userd.destroy
+    # respond_to do |format|
+      # format.html { redirect_to userds_url, notice: 'Userd was successfully destroyed.' }
+      # format.json { head :no_content }
+    # end
   end
 
   private

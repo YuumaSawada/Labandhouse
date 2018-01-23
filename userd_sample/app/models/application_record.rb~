@@ -1,4 +1,4 @@
 class ApplicationRecord < ActiveRecord::Base
-  acts_as_paranoid without_default_scope: true
+  acts_as_paranoid
   self.abstract_class = true
 end
