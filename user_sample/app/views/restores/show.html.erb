@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @duser.user_id %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @duser.password %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @duser.name %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= @duser.grade %>
+</p>
+
+<p>
+  <strong>Registered at:</strong>
+  <%= @duser.registered_at %>
+</p>
+
+<p>
+  <strong>Updated at:</strong>
+  <%= @duser.updated_at %>
+</p>
+
+<p>
+  <strong>Deleted at:</strong>
+  <%= @duser.deleted_at %>
+</p>
+
+<%= link_to 'Edit', edit_restore_path(@duser) %> |
+<%= link_to 'Back', restores_path %>

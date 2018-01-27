@@ -1,0 +1,38 @@
+<p id="notice"><%= notice %></p>
+
+<h1>dUsers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Password</th>
+      <th>Name</th>
+      <th>Grade</th>
+      <th>Registered at</th>
+      <th>Updated at</th>
+      <th>Deleted at</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.user_id %></td>
+        <td><%= user.password %></td>
+        <td><%= user.name %></td>
+        <td><%= user.grade %></td>
+        <td><%= user.registered_at %></td>
+        <td><%= user.updated_at %></td>
+        <td><%= user.deleted_at %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'index', @user %>
