@@ -2,38 +2,38 @@
 
 <p>
   <strong>User:</strong>
-  <%= @duser.user_id %>
+  <%= @user.user_id %>
 </p>
 
 <p>
   <strong>Password:</strong>
-  <%= @duser.password %>
+  <%= @user.password %>
 </p>
 
 <p>
   <strong>Name:</strong>
-  <%= @duser.name %>
+  <%= @user.name %>
 </p>
 
 <p>
   <strong>Grade:</strong>
-  <%= @duser.grade %>
+  <%= @user.grade %>
 </p>
 
 <p>
   <strong>Registered at:</strong>
-  <%= @duser.registered_at %>
+  <%= @user.registered_at %>
 </p>
 
 <p>
   <strong>Updated at:</strong>
-  <%= @duser.updated_at %>
+  <%= @user.updated_at %>
 </p>
 
 <p>
   <strong>Deleted at:</strong>
-  <%= @duser.deleted_at %>
+  <%= @user.deleted_at %>
 </p>
 
-<%= link_to 'Edit', edit_restore_path(@duser) %> |
-<%= link_to 'Back', restores_path %>
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

@@ -1,39 +1,20 @@
 <p id="notice"><%= notice %></p>
+<h1>ユーザ情報閲覧</h1>
 
 <p>
-  <strong>User:</strong>
-  <%= @user.user_id %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
-
-<p>
-  <strong>Name:</strong>
+  <strong>名前:</strong>
   <%= @user.name %>
 </p>
 
 <p>
-  <strong>Grade:</strong>
+  <strong>パスワード:</strong>
+  <%= @user.password %>
+</p>
+
+<p>
+  <strong>学年:</strong>
   <%= @user.grade %>
 </p>
 
-<p>
-  <strong>Registered at:</strong>
-  <%= @user.registered_at %>
-</p>
-
-<p>
-  <strong>Updated at:</strong>
-  <%= @user.updated_at %>
-</p>
-
-<p>
-  <strong>Deleted at:</strong>
-  <%= @user.deleted_at %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to '編集', edit_user_path(@user) %> |
+<%= link_to 'ユーザ一覧', users_path %>

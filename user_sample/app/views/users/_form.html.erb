@@ -12,28 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, id: :user_user_id %>
-  </div>
-
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.text_field :password, id: :user_password %>
-  </div>
-
-  <div class="field">
-    <%= form.label :name %>
+    <%= form.label :"名前" %>
     <%= form.text_field :name, id: :user_name %>
   </div>
 
   <div class="field">
-    <%= form.label :grade %>
-    <%= form.text_field :grade, id: :user_grade %>
+    <%= form.label :"パスワード" %>
+    <%= form.text_field :password, id: :user_password %>
   </div>
 
   <div class="field">
-    <%= form.label :registered_at %>
-    <%= form.datetime_select :registered_at, id: :user_registered_at %>
+    <%= form.label :"学年" %>
+    <%= form.select :grade,[["B1", "B1"], ["B2", "B2"],["B3", "B3"], ["B4", "B4"],["M1", "M1"], ["M2", "M2"]], id: :user_grade %>
   </div>
 
   <div class="actions">

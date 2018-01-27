@@ -17,17 +17,16 @@
   </thead>
 
   <tbody>
-    <% @users.each do |user| %>
+    <% @dusers.each do |duser| %>
       <tr>
-        <td><%= user.user_id %></td>
-        <td><%= user.password %></td>
-        <td><%= user.name %></td>
-        <td><%= user.grade %></td>
-        <td><%= user.registered_at %></td>
-        <td><%= user.updated_at %></td>
-        <td><%= user.deleted_at %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= duser.user_id %></td>
+        <td><%= duser.password %></td>
+        <td><%= duser.name %></td>
+        <td><%= duser.grade %></td>
+        <td><%= duser.registered_at %></td>
+        <td><%= duser.updated_at %></td>
+        <td><%= duser.deleted_at %></td>
+        <td><%= link_to 'restore', duser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -35,4 +34,4 @@
 
 <br>
 
-<%= link_to 'index', @user %>
+<%= link_to 'index', users_path %>

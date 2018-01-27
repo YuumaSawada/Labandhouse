@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
@@ -54,17 +55,31 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+    if @flag == true then
+      @user.destroy
+      respond_to do |format|
+      format.html { redirect_to users_url, notice: @user.name+'を消去しました' }
       format.json { head :no_content }
+      end
+    else
+      @user.restore
+      respond_to do |format|
+      format.html { redirect_to restores_url, notice: @user.name+'を復元しました' }
+      format.json { head :no_content }
+      end
     end
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
-      @user = User.find(params[:id])
+      @user = User.with_deleted.find(params[:id])
+      if @user.deleted_at.nil? == true then
+        @flag = true
+      else
+        @flag = false
+      end
+        
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -1,17 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<h1>dUsers</h1>
+<h1>消去済ユーザ一覧</h1>
 
 <table>
   <thead>
     <tr>
-      <th>User</th>
-      <th>Password</th>
-      <th>Name</th>
-      <th>Grade</th>
-      <th>Registered at</th>
-      <th>Updated at</th>
-      <th>Deleted at</th>
+      <th>id</th>
+      <th>名前</th>
+      <th>学年</th>
+      <th>消去日時</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -19,14 +16,11 @@
   <tbody>
     <% @dusers.each do |duser| %>
       <tr>
-        <td><%= duser.user_id %></td>
-        <td><%= duser.password %></td>
+        <td><%= duser.id %></td>
         <td><%= duser.name %></td>
         <td><%= duser.grade %></td>
-        <td><%= duser.registered_at %></td>
-        <td><%= duser.updated_at %></td>
         <td><%= duser.deleted_at %></td>
-        <td><%= link_to 'restore', duser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '復元', duser,method: :delete, data: { confirm: '本当に復元しますか?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +28,4 @@
 
 <br>
 
-<%= link_to 'index', users_path %>
+<%= link_to 'ユーザ一覧', users_path %>
