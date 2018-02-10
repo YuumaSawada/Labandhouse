@@ -1,6 +1,0 @@
-2018/02/05 19:38:11 [emerg] 775#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2018/02/05 19:38:22 [emerg] 815#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2018/02/05 19:41:45 [emerg] 1052#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2018/02/05 19:44:52 [emerg] 1296#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2018/02/05 19:44:56 [emerg] 1330#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
-2018/02/05 19:47:25 [emerg] 1450#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
