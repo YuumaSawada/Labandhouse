@@ -1,0 +1,185 @@
+[ N 2018-02-05 18:55:20.9257 29692/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 18:55:20.9634 29695/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 18:55:20.9635 29695/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 18:55:20.9751 29695/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 29695
+App 29725 stdout: 
+[ N 2018-02-05 18:55:24.6972 29695/T8 age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 29742 stdout: 
+App 29725 stderr: [ 2018-02-05 18:55:27.5628 29742/0xb725021c(Worker 1) utils.rb ]: *** Exception RuntimeError in Rack application object (Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`) (process 29742, thread 0xb725021c(Worker 1)):
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:510:in `validate_secret_key_config!'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:247:in `env_config'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:692:in `build_request'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/application.rb:518:in `build_request'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/railties-5.1.4/lib/rails/engine.rb:521:in `call'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/passenger-5.2.0/src/ruby_supportlib/phusion_passenger/rack/thread_handler_extension.rb:97:in `process_request'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/passenger-5.2.0/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:160:in `accept_and_process_next_request'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/passenger-5.2.0/src/ruby_supportlib/phusion_passenger/request_handler/thread_handler.rb:113:in `main_loop'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/passenger-5.2.0/src/ruby_supportlib/phusion_passenger/request_handler.rb:416:in `block (3 levels) in start_threads'
+App 29725 stderr: 	from /home/Yuuma/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/passenger-5.2.0/src/ruby_supportlib/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+[ W 2018-02-05 18:55:27.5632 29695/T5 age/Cor/Con/InternalUtils.cpp:96 ]: [Client 1-1] Sending 502 response: application did not send a complete response
+
+[ N 2018-02-05 18:56:12.0642 29695/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 18:56:12.0643 29695/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 18:56:12.0643 29695/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 29742, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 18:56:12.0644 29695/T9 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 18:56:12.0644 29695/T9 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 18:56:12.0645 29695/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 18:56:12.0645 29695/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 18:56:12.0646 29695/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 29742, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 18:56:12.3133 29695/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:14:10.3324 31038/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:14:10.3707 31041/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:14:10.3709 31041/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:14:10.3807 31041/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 31041
+App 31071 stdout: 
+[ N 2018-02-05 19:14:14.3142 31041/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 31088 stdout: 
+
+[ N 2018-02-05 19:20:18.9155 31041/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:20:18.9156 31041/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:20:18.9156 31041/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 31088, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:20:18.9233 31041/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:20:18.9233 31041/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:20:18.9234 31041/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:20:18.9234 31041/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:20:18.9235 31041/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 31088, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:20:19.1974 31041/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:20:32.8273 31610/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:20:32.8679 31613/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:20:32.8681 31613/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:20:32.8765 31613/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 31613
+App 31643 stdout: 
+[ N 2018-02-05 19:20:36.6532 31613/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 31658 stdout: 
+
+[ N 2018-02-05 19:23:03.0305 31613/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:23:03.0305 31613/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:23:03.0306 31613/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 31658, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:23:03.0357 31613/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:23:03.0358 31613/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:23:03.0405 31613/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:23:03.0405 31613/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:23:03.0406 31613/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 31658, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:23:03.3220 31613/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:25:31.8108 32095/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:25:31.8459 32098/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:25:31.8461 32098/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:25:31.8545 32098/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 32098
+App 32128 stdout: 
+[ N 2018-02-05 19:25:35.5185 32098/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 32145 stdout: 
+
+[ N 2018-02-05 19:26:18.5932 32098/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:26:18.5932 32098/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:26:18.5933 32098/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 32145, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:26:18.5934 32098/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:26:18.5934 32098/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:26:18.5934 32098/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:26:18.5934 32098/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:26:18.5935 32098/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 32145, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:26:18.8396 32098/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:26:23.2541 32231/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:26:23.2907 32234/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:26:23.2908 32234/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:26:23.2993 32234/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 32234
+App 32266 stdout: 
+[ N 2018-02-05 19:26:26.9689 32234/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 32281 stdout: 
+
+[ N 2018-02-05 19:26:48.3895 32234/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:26:48.3895 32234/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:26:48.3896 32234/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 32281, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:26:48.3896 32234/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:26:48.3897 32234/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:26:48.3897 32234/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:26:48.3897 32234/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:26:48.3898 32234/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 32281, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:26:48.6284 32234/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:26:49.5388 32378/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:26:49.5739 32381/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:26:49.5740 32381/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:26:49.5824 32381/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 32381
+App 32413 stdout: 
+[ N 2018-02-05 19:26:53.2420 32381/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 32430 stdout: 
+
+[ N 2018-02-05 19:29:01.6886 32381/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:29:01.6886 32381/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:29:01.6887 32381/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 32430, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:29:01.6944 32381/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:29:01.6945 32381/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:29:01.6986 32381/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:29:01.6986 32381/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:29:01.6987 32381/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 32430, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:29:01.9833 32381/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:30:38.1193 32712/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:30:38.1552 32715/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:30:38.1553 32715/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:30:38.1641 32715/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 32715
+App 32745 stdout: 
+[ N 2018-02-05 19:30:41.8300 32715/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 32760 stdout: 
+
+[ N 2018-02-05 19:30:48.6631 32715/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:30:48.6632 32715/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:30:48.6632 32715/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 32760, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:30:48.6633 32715/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:30:48.6633 32715/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:30:48.6633 32715/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:30:48.6634 32715/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:30:48.6634 32715/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 32760, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (production)
+[ N 2018-02-05 19:30:48.8992 32715/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:30:57.1504 345/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:30:57.1860 348/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:30:57.1861 348/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:30:57.1945 348/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 348
+App 381 stdout: 
+[ N 2018-02-05 19:31:00.8494 348/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 402 stdout: 
+
+[ N 2018-02-05 19:32:43.1255 348/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:32:43.1255 348/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:32:43.1256 348/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 402, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (development)
+[ N 2018-02-05 19:32:43.1355 348/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:32:43.1356 348/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:32:43.1356 348/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:32:43.1356 348/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:32:43.1357 348/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 402, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (development)
+[ N 2018-02-05 19:32:43.4186 348/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:41:28.9600 934/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:41:28.9977 937/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:41:28.9978 937/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:41:29.0062 937/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 937
+App 969 stdout: 
+[ N 2018-02-05 19:41:33.5735 937/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 990 stdout: 
+
+[ N 2018-02-05 19:41:37.0311 937/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:41:37.0312 937/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:41:37.0312 937/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 990, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (development)
+[ N 2018-02-05 19:41:37.0313 937/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:41:37.0313 937/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:41:37.0313 937/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:41:37.0314 937/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:41:37.0314 937/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 990, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (development)
+[ N 2018-02-05 19:41:37.2706 937/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished
+[ N 2018-02-05 19:50:42.4071 1776/T1 age/Wat/WatchdogMain.cpp:1252 ]: Starting Passenger watchdog...
+[ N 2018-02-05 19:50:42.4425 1779/T1 age/Cor/CoreMain.cpp:1242 ]: Starting Passenger core...
+[ N 2018-02-05 19:50:42.4427 1779/T1 age/Cor/CoreMain.cpp:252 ]: Passenger core running in multi-application mode.
+[ N 2018-02-05 19:50:42.4512 1779/T1 age/Cor/CoreMain.cpp:977 ]: Passenger core online, PID 1779
+App 1809 stdout: 
+[ N 2018-02-05 19:50:46.1626 1779/Ta age/Cor/SecurityUpdateChecker.h:507 ]: Security update check: no update found (next check in 24 hours)
+App 1832 stdout: 
+App 1850 stdout: 
+
+[ N 2018-02-05 19:51:12.7132 1779/T5 age/Cor/CoreMain.cpp:616 ]: Signal received. Gracefully shutting down... (send signal 2 more time(s) to force shutdown)
+[ N 2018-02-05 19:51:12.7132 1779/T1 age/Cor/CoreMain.cpp:1154 ]: Received command to shutdown gracefully. Waiting until all clients have disconnected...
+[ N 2018-02-05 19:51:12.7133 1779/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 1832, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (development)
+[ N 2018-02-05 19:51:12.7133 1779/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 1850, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (development)
+[ N 2018-02-05 19:51:12.7134 1779/T8 Ser/Server.h:903 ]: [ApiServer] Freed 0 spare client objects
+[ N 2018-02-05 19:51:12.7134 1779/T8 Ser/Server.h:559 ]: [ApiServer] Shutdown finished
+[ N 2018-02-05 19:51:12.7136 1779/T5 Ser/Server.h:903 ]: [ServerThr.1] Freed 0 spare client objects
+[ N 2018-02-05 19:51:12.7136 1779/T5 Ser/Server.h:559 ]: [ServerThr.1] Shutdown finished
+[ N 2018-02-05 19:51:12.7137 1779/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 1832, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (development)
+[ N 2018-02-05 19:51:12.7137 1779/T1 age/Cor/CoreMain.cpp:1068 ]: Checking whether to disconnect long-running connections for process 1850, application /home/Yuuma/デスクトップ/Labandhouse/user_sample (development)
+[ N 2018-02-05 19:51:12.9555 1779/T1 age/Cor/CoreMain.cpp:1227 ]: Passenger core shutdown finished

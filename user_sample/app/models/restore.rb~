@@ -1,3 +1,0 @@
-class restore < ApplicationRecord
-  acts_as_paranoid
-end
